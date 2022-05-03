@@ -2,6 +2,11 @@
 <html lang="en">
 
 <head>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,36 +14,54 @@
 </head>
 
 <body>
-  <div>
-    <h1>Brazilian Music</h1>
+  <div class="main">
+    <header>
+      <h1>Brazilian Music</h1>
+    </header>
+    
     <nav>
-      <div>Introduction</div>
-      <div>History</div>
-      <div>Worldwide</div>
-      <div>Contact</div>
+      <h4 style="font-weight: bold;" class="pointer hover">
+        <a href="index.html">Introduction</a>
+      </h4>
+      <h4 class="pointer hover">
+        <a href="history.html">History</a>
+      </h4>
+      <h4 class="pointer hover">
+        <a href="worldwide.html">Worldwide</a>
+      </h4>
+      <h4 class="pointer hover">
+        <a href="contact.html">Contact</a>
+      </h4>
     </nav>
-  </div>
 
-  <section>
+  <section class="container-content">
     <h2>Worldwide</h2>
     <p>
       With the advance of technology and globalization, brazilian songs became much more famous internationally along with other latin artists. Among artists who got international recognition are: Anitta, Michel Teló (his hit "Ai Se Eu Te Pego" was at some point one of the most famous songs in European charts), DJ Alok,  André Matos (from the rock band Viper) and others.
     </p>
   </section>
 
-  <section>
+  <section class="container-content">
     <h2>"Garota de Ipanema" ("The Girl from Ipanema")</h2>
-    <p>
-      Written by Tom Jobim in the early 60s, this worldwide song won a Grammy Record of the Year and is believed to be the second most recorded song in history, being even sung by Frank Sinatra in 1967. 
-      It is often played in hollywood films, given its nature as a calm bossa nova melody.
-    </p>
-    <p>
-      In 2021, pop singer Anitta released an interpolation song called “Girl From Rio”, with many elements similar to the historical hit.
-    </p>
-    <video></video>
+    <div class="container-content video-container">
+      <p style="flex-grow: 1;">
+        Written by Tom Jobim in the early 60s, this worldwide song won a Grammy Record of the Year and is believed to be the second most recorded song in history, being even sung by Frank Sinatra in 1967. 
+        It is often played in hollywood films, given its nature as a calm bossa nova melody.
+      </p>
+      <p style="flex-grow: 1;">
+        In 2021, pop singer Anitta released an interpolation song called “Girl From Rio”, with many elements similar to the historical hit.
+      </p>
+  
+      <iframe src="https://www.youtube.com/embed/WuenyQ4NCQE" class="video"></iframe>
+    </div>
   </section>
 
-  <footer></footer>
+  </div>
+ 
+  <footer>
+    <img src="icons/github.svg" alt="GitHub Logo" class="hover"/>
+    <img src="icons/up_arrow.svg" alt="Go Up Arrow" class="hover"/>
+  </footer>
 </body>
 
 </html>

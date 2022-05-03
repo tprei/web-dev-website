@@ -2,6 +2,11 @@
 <html lang="en">
 
 <head>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,34 +14,69 @@
 </head>
 
 <body>
-  <div>
-    <h1>Brazilian Music</h1>
+  <div class="main">
+    <header>
+      <h1>Brazilian Music</h1>
+    </header>
+    
     <nav>
-      <div>Introduction</div>
-      <div>History</div>
-      <div>Worldwide</div>
-      <div>Contact</div>
+      <h4 style="font-weight: bold;" class="pointer hover">
+        <a href="index.html">Introduction</a>
+      </h4>
+      <h4 class="pointer hover">
+        <a href="history.html">History</a>
+      </h4>
+      <h4 class="pointer hover">
+        <a href="worldwide.html">Worldwide</a>
+      </h4>
+      <h4 class="pointer hover">
+        <a href="contact.html">Contact</a>
+      </h4>
     </nav>
+
+    <section class="container-content">
+      <h2>Contact</h2>
+      <p>
+        If you’d like to speak to us about your favorite brazilian songs, give feedback or have any suggestions, please fill the form below!
+      </p>
+
+      <form id="contact">
+        <label for="name">Name</label>
+        <input type="text" title="Name" id="name" required>
+
+        <label for="email">Email</label>
+        <input type="text" title="Email" id="email" required>
+
+        <div id="checkbox">
+          <label for="checkbox">I want to receive the latest cool information about Brazilian music</label>
+          <input type="checkbox">
+        </div>
+
+        <div id="gender" required>
+          <input type="radio" title="Gender" id="gender">
+          <input type="radio" title="Gender" id="gender">
+          <input type="radio" title="Gender" id="gender">
+        </div>
+
+        <div id="message" required>
+          <label for="message">Your Message</label>
+          <input type="text" title="Message">
+        </div>
+
+
+        <div id="form-btn">
+          <button type="reset">Reset</button>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </section>
+
   </div>
 
-  <section>
-    <h2>Contact</h2>
-    <p>
-      If you’d like to speak to us about your favorite brazilian songs, give feedback or have any suggestions, please fill the form below!
-    </p>
-  </section>
-
-  <form>
-    <input type="text" title="Name" required>
-    <input type="text" title="Email" required>
-    <input type="checkbox" title="I want to receive the latest cool information about Brazilian music">
-    <input type="radio" title="Gender" required>
-    <input type="text" title="Message" required>
-    <button type="reset">Reset</button>
-    <button type="submit">Submit</button>
-  </form>
-
-  <footer></footer>
+  <footer>
+    <img src="icons/github.svg" alt="GitHub Logo" class="hover"/>
+    <img src="icons/up_arrow.svg" alt="Go Up Arrow" class="hover"/>
+  </footer>
 </body>
 
 </html>

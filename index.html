@@ -2,6 +2,11 @@
 <html lang="en">
 
 <head>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,98 +14,132 @@
 </head>
 
 <body>
-  <div>
-    <h1>Brazilian Music</h1>
+  <div class="main">
+    <header>
+      <h1>Brazilian Music</h1>
+    </header>
+    
     <nav>
-      <div>Introduction</div>
-      <div>History</div>
-      <div>Worldwide</div>
-      <div>Contact</div>
+      <h4 style="font-weight: bold;" class="pointer hover">
+        <a href="index.html">Introduction</a>
+      </h4>
+      <h4 class="pointer hover">
+        <a href="history.html">History</a>
+      </h4>
+      <h4 class="pointer hover">
+        <a href="worldwide.html">Worldwide</a>
+      </h4>
+      <h4 class="pointer hover">
+        <a href="contact.html">Contact</a>
+      </h4>
     </nav>
+  
+    <section class="intro-container">
+      <div class="container-content">
+        <h2>Introduction</h2>
+        <p>
+          Music is one of the main forms of art and culture spread throughout Brazil.
+          As it is known, the mixture of culture and elements is a big part of the country and music was no different.
+          It was introduced and developed from many different sources, such as those from the native indigenous people who
+          were the first to live there, but also from other nations that were part of brazilian history: colonizers from
+          Europe (specifically Portugal and Spain) and slaves from Africa.
+        </p>
+        <p>
+          It is also interesting that music is very regional in Brazil, given how large and diverse in culture it is from
+          North to South.
+          One car hear a very explicit difference in contemporary trending songs in Rio de Janeiro (in the southeast) and
+          Pernambuco (in the northeast).
+        </p>
+        <div>
+          <button class="btn">read more</button>
+        </div>
+      </div>
+  
+      <div class="intro-container-figs">
+        <img src='img/pandeiro.svg' alt='Image of the instrument "pandeiro"'/>
+        <img src='img/brazil.svg' alt='Outline of Brazil'/>
+      </div>
+      
+    </section>
+  
+    <section class="container-content">
+      <h2>Famous Genres</h2>
+      <div class="genres-container">
+        <article>
+          <h3>Samba</h3>
+          <img src="img/samba.jpg" alt="Samba">
+          <p>
+            Originated in Bahia (Northeastern state of Brazil) in the early 19th century among afro-brazilian communities.
+            It is one of the most important forms of urban and modern musical experssion.
+            It was also responsible for the birth of the Samba Schools that perform parades during Carnival every year.
+          </p>
+        </article>
+  
+        <article>
+          <h3>Sertanejo</h3>
+          <img src="img/sertanejo.png" alt="Sertanejo">
+          <p>
+            Genre where the guitar is very predominant. It is currently the most popular musical style in most states of the country, surpassing even Samba.
+            It originated and sitll is usually played by two singers with very high and nasal voices. 
+            It grew in popularity in the las t century and was responsible for the birth of many subgenres, like “Romantic Sertanejo” and “Universitarian Sertanejo”.
+          </p>
+        </article>
+  
+        <article>
+          <h3>Forró</h3>
+          <img src="img/forró.jpg" alt="Forró">
+          <p>
+            With a very folk-like sounding, this popular genre of music is played on parties with the same name and was created by a famous artist named Luiz Gonzaga in 1958.
+            It is characterized by the usage of very peculiar instruments, the accordeon and the “zabumba”.
+          </p>
+        </article>
+      </div>
+    </section>
+  
+    <section class="container-content">
+      <h2>Famous Artists</h2>
+      <div class="artists-container">
+        <article>
+          <h3>Wesley Safadão</h3>
+          <img src="img/safadão.jpg" alt="Wesley Safadão">
+          <p>
+            Debuting in a northeastern band in 2003, Wesley Safadão has become one of the most influential solo singers 
+            in Brazil, winning various awards for the most popular Sertanejo songs in the latst years and referenced as a “prominent 30 under 30” by Forbes.
+          </p>
+        </article>
+  
+        <article>
+          <h3>Péricles</h3>
+          <img src="img/péricão.jpg" alt="Péricles">
+          <p>
+            Péricles was first the leading singer for a large Samba group called “Exaltasamba”. 
+            Having won the Latin American Grammy for the best album and sold more than 8 million copies, Exaltasamba was one of the most prominent national groups in Brazilian Music.
+            After their split in 2012, Péricles went on in a solo career.
+          </p>
+        </article>
+  
+        <article>
+          <h3>Tim Maia</h3>
+          <img src="img/timmaia.jpg" alt="Tim Maia">
+          <p>
+            Singer, composer and maestro, Tim Maia was responsible for introducing traditional Soul, Funk and Jazz characteristics to brazilian music.
+            His music was very famous for his low voice nad had international fame in the 70s. 
+            The Rolling Stones maganize even went so far to say that Tim Maia was the biggest singer Brazil has ever seen.
+          </p>
+        </article>
+      </div>
+      <br>
+      <div>
+        <button class="btn" style="float: right;">listen on spotify...</button>
+      </div>
+    </section>
   </div>
 
-  <section>  
-    <h2>Introduction</h2>
-    <p>
-      Music is one of the main forms of art and culture spread throughout Brazil.
-      As it is known, the mixture of culture and elements is a big part of the country and music was no different.
-      It was introduced and developed from many different sources, such as those from the native indigenous people who
-      were the first to live there, but also from other nations that were part of brazilian history: colonizers from
-      Europe (specifically Portugal and Spain) and slaves from Africa.
-    </p>
-    <p>
-      It is also interesting that music is very regional in Brazil, given how large and diverse in culture it is from
-      North to South.
-      One car hear a very explicit difference in contemporary trending songs in Rio de Janeiro (in the southeast) and
-      Pernambuco (in the northeast).
-    </p>
-    <button>read more</button>
-  </section>
-
-  <section>
-    <h2>Famous Genres</h2>
-    <div>
-      <article>
-        <h3>Samba</h3>
-        <p>
-          Originated in Bahia (Northeastern state of Brazil) in the early 19th century among afro-brazilian communities.
-          It is one of the most important forms of urban and modern musical experssion.
-          It was also responsible for the birth of the Samba Schools that perform parades during Carnival every year.
-        </p>
-      </article>
-
-      <article>
-        <h3>Sertanejo</h3>
-        <p>
-          Genre where the guitar is very predominant. It is currently the most popular musical style in most states of the country, surpassing even Samba.
-          It originated and sitll is usually played by two singers with very high and nasal voices. 
-          It grew in popularity in the las t century and was responsible for the birth of many subgenres, like “Romantic Sertanejo” and “Universitarian Sertanejo”.
-        </p>
-      </article>
-
-      <article>
-        <h3>Forró</h3>
-        <p>
-          With a very folk-like sounding, this popular genre of music is played on parties with the same name and was created by a famous artist named Luiz Gonzaga in 1958.
-          It is characterized by the usage of very peculiar instruments, the accordeon and the “zabumba”.
-        </p>
-      </article>
-    </div>
-  </section>
-
-  <section>
-    <h2>Famous Artists</h2>
-    <div>
-      <article>
-        <h3>Wesley Safadão</h3>
-        <p>
-          Debuting in a northeastern band in 2003, Wesley Safadão has become one of the most influential solo singers 
-          in Brazil, winning various awards for the most popular Sertanejo songs in the latst years and referenced as a “prominent 30 under 30” by Forbes.
-        </p>
-      </article>
-
-      <article>
-        <h3>Péricles</h3>
-        <p>
-          Péricles was first the leading singer for a large Samba group called “Exaltasamba”. 
-          Having won the Latin American Grammy for the best album and sold more than 8 million copies, Exaltasamba was one of the most prominent national groups in Brazilian Music.
-          After their split in 2012, Péricles went on in a solo career.
-        </p>
-      </article>
-
-      <article>
-        <h3>Tim Maia</h3>
-        <p>
-          Singer, composer and maestro, Tim Maia was responsible for introducing traditional Soul, Funk and Jazz characteristics to brazilian music.
-          His music was very famous for his low voice nad had international fame in the 70s. 
-          The Rolling Stones maganize even went so far to say that Tim Maia was the biggest singer Brazil has ever seen.
-        </p>
-      </article>
-    </div>
-    <button>listen on spotify...</button>
-  </section>
-
-  <footer></footer>
+  <footer>
+    <img src="icons/github.svg" alt="GitHub Logo" class="hover"/>
+    <img src="icons/up_arrow.svg" alt="Go Up Arrow" class="hover"/>
+  </footer>
+  
 </body>
 
 </html>
