@@ -40,33 +40,42 @@
         If you’d like to speak to us about your favorite brazilian songs, give feedback or have any suggestions, please fill the form below!
       </p>
 
-      <form id="contact">
+      <form id="contact" class="container-content" action="mailto:thiagop@usp.br" method="get">
         <label for="name">Name</label>
-        <input type="text" title="Name" id="name" required>
+        <input type="text" title="Name" id="name" placeholder="Your name..." required>
 
         <label for="email">Email</label>
-        <input type="text" title="Email" id="email" required>
+        <input type="text" title="Email" id="email" placeholder="Your email..." required>
 
-        <div id="checkbox">
-          <label for="checkbox">I want to receive the latest cool information about Brazilian music</label>
-          <input type="checkbox">
+        <div id="info-checkbox">
+          <label for="info-checkbox-child">I want to receive the latest cool information about Brazilian music</label>
+          <input id="info-checkbox-child" type="checkbox">
         </div>
 
-        <div id="gender" required>
-          <input type="radio" title="Gender" id="gender">
-          <input type="radio" title="Gender" id="gender">
-          <input type="radio" title="Gender" id="gender">
-        </div>
+        <fieldset>
+          <legend>Select your gender:</legend>
+          <div id="gender">
+            <input type="radio" id="male" name="radio" value="Male">
+            <label for="male">Male</label>
+            
+            <input type="radio" id="female" name="radio" value="Female">
+            <label for="female">Female</label>
 
-        <div id="message" required>
-          <label for="message">Your Message</label>
-          <input type="text" title="Message">
-        </div>
+            <input type="radio" id="other" name="radio" value="Other">
+            <label for="other">Other</label>
+
+            <input type="radio" id="no-declare" name="radio" value="I don't want to declare">
+            <label for="no-declare">I don't want to declare</label>
+          </div>
+        </fieldset>
+
+        <label for="message">Your message</label>
+        <textarea id="message" rows="14" cols="10" wrap="soft"></textarea>
 
 
         <div id="form-btn">
-          <button type="reset">Reset</button>
-          <button type="submit">Submit</button>
+          <button type="reset" class="btn">Reset</button>
+          <button type="submit" class="btn">Submit</button>
         </div>
       </form>
     </section>
@@ -74,8 +83,8 @@
   </div>
 
   <footer>
-    <img src="icons/github.svg" alt="GitHub Logo" class="hover"/>
-    <img src="icons/up_arrow.svg" alt="Go Up Arrow" class="hover"/>
+    <a href="https://github.com/tprei"><img src="icons/github.svg" alt="GitHub Logo" class="hover"/></a>
+    <img src="icons/up_arrow.svg" alt="Go Up Arrow" class="hover" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });"/>
   </footer>
 </body>
 

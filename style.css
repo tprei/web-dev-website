@@ -232,6 +232,28 @@ th {
     flex-direction: column;
 }
 
+#name, #email {
+    max-width: 50ch;
+}
+
+#message {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+#info-checkbox {
+    display: flex;
+    flex-direction: row-reverse;
+
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#message > input[type="textarea"] {
+    min-height: 15ch;
+}
+
 /* Smaller screens */
 @media screen and (max-width: 350px) {
     table {
@@ -273,5 +295,10 @@ th {
     .video {
         min-height: 250px;
         max-height: 250px;
+    }
+
+    #gender {
+        display: flex;
+        flex-direction: column;
     }
 }
